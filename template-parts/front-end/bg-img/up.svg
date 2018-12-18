@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="46" height="46" viewBox="0 0 46 46">
+  <defs>
+    <linearGradient id="arrowup-c" x1="13.945%" x2="88.102%" y1="16.813%" y2="81.328%">
+      <stop offset="0%" stop-color="#00DDC0"/>
+      <stop offset="100%" stop-color="#00DE7D"/>
+    </linearGradient>
+    <circle id="arrowup-b" cx="19" cy="19" r="19"/>
+    <filter id="arrowup-a" width="136.8%" height="136.8%" x="-18.4%" y="-13.2%" filterUnits="objectBoundingBox">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(4 2)">
+    <use fill="#000" filter="url(#arrowup-a)" xlink:href="#arrowup-b"/>
+    <use fill="url(#arrowup-c)" xlink:href="#arrowup-b"/>
+    <path fill="#FFF" d="M18.0662526,12.974278 L11.4138724,19.6266582 L10,18.2127857 L19.2127857,9 L19.5167653,9.30397961 L28,17.7872143 L26.4645357,19.3226786 L20.237727,13.0958699 L20.237727,29.1743244 L18.0662526,29.1743244 L18.0662526,12.974278 Z"/>
+  </g>
+</svg>
