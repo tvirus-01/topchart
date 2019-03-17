@@ -35,6 +35,13 @@ $wpdb->query("CREATE TABLE IF NOT EXISTS `{$prefix}topchart_song`(
 				`status` int(1) NOT NULL,   	
 				`position_1` int(50) NOT NULL,   	
 				`position_2` int(50) NOT NULL   	
-				)ENGINE=InnoDB DEFAULT CHARSET=latin1");		
+				)ENGINE=InnoDB DEFAULT CHARSET=latin1");
+
+// we might need some extra table on dbcon
+$wpdb->query("CREATE TABLE IF NOT EXISTS `{$prefix}bitter`(
+				`id` int(50) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+				`gener_name` varchar(100) NOT NULL
+				)ENGINE=InnoDB DEFAULT CHARSET=latin1");
+
 
 ?>
